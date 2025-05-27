@@ -26,7 +26,7 @@
   }
 
   body, a, button, input, textarea, select, label {
-    cursor: url('/imagenes/corazon.png') 16 16, auto;
+    cursor: url('imagenes/corazon.png') 16 16, auto;
   }
 
   header{
