@@ -9,7 +9,7 @@
     background-color: black;
     color: white;
     line-height: 1.5;
-    background-image: url('/imagenes/video_fondo.gif');
+    background-image: url('imagenes/video_fondo.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
