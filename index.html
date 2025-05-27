@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio de Ana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ana María Barragán Ariza">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+      <div class="cabeza">
+        <h1>Ana María Barragán - Riwi Developer</h1>
+        <p id="datos"><strong>Edad:</strong> 22 años | <strong>Signo:</strong> Sagitario | <strong>Origen:</strong> Tame-Arauca</p>
+        <time datetime="2025-05-23">Última actualización: 26 de mayo de 2025</time>
+      </div>
+      <img src="/imagenes/yo.jpg" alt="Soy yo" width="400">
+    </header>
+  
+    <nav class="navegacion">
+        <div class="gif-nav izquierda">
+            <img src="/imagenes/sans-fight.gif" alt="Sans">
+        </div>
+      <ul>
+        <li><a href="#presentacion">Sobre mí</a></li>
+        <li><a href="#gustos">Curiosidades</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="gif-nav derecha">
+        <img src="/imagenes/flowey.gif" alt="flowey">
+      </div>
+    </nav>
+  
+    <main>
+      <section id="presentacion" class="caja-dialogo">
+        <h2>Sobre mí</h2>
+        <article>
+          <p class="texto-dialogo">Holaaa!, soy Ana María, estudiante de Ingeniería de Sistemas e Informática en la 
+            Universidad Nacional de Colombia y hago parte de la cohorte 4 de coders en Riwi.</p>
+          <p class="texto-dialogo">Desde pequeña me ha llamado la atencion el mundo de la tecnologia;
+            el como funciona y para que nos sirve. Amo aprender cosas nuevas :3.</p>
+        </article>
+        <div id="quote">
+            <aside>
+                <blockquote>"El que se asusta, se quema"</blockquote>
+            </aside>
+        </div>
+        
+      </section>
+  
+      <section id="gustos" class="caja-dialogo">
+        <h2>Algunas curiosidades</h2>
+        <p class="texto-dialogo">Me encantan los doritos dinamita, acariciar a mis gatos cuando estoy 
+            con mi familia, el café caliente y la luz del sol cuando hace frío.</p>
+        <figure>
+            <img src="/imagenes/Captura desde 2025-05-26 20-36-22.png" alt="Playlist" width="200">
+          <figcaption><i>Playlist para perderse en la noche y sentirse vampiro</i></figcaption>
+        </figure>
+      </section>
+  
+      <section id="habilidades" class="caja-dialogo">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+          <li>HTML y CSS</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Git y GitHub</li>
+          <li>Visual Studio Code</li>
+          <li>Comunicación asertiva</li>
+        </ul>
+      </section>
+  
+      <section id="proyectos" class="caja-dialogo">
+        <h2>Mis Proyectos</h2>
+        <article>
+          <h3 style="color: yellow;">Hoja de vida</h3>
+          <p>Es una página donde se puede ver mi información y habilidades.</p>
+          <img src="/imagenes/Captura desde 2025-05-26 20-36-22.png" alt="hoja de vida" width="600">
+        </article>
+  
+        <h4>Otros proyectos y enlaces:</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre del Proyecto</th>
+              <th>Tecnologías</th>
+              <th>Enlace</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hoja de vida</td>
+              <td>HTML, CSS</td>
+              <td><a href="https://anarragan.github.io/Projectos/" target="_blank">Ver</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+  
+      <section id="contacto" class="caja-dialogo">
+        <h2>Contáctame</h2>
+        <form>
+          <fieldset>
+            <legend>Formulario de contacto</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" required><br><br>
+  
+            <label for="correo">Correo:</label><br>
+            <input type="email" name="correo" id="correo" required><br><br>
+  
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" rows="4"></textarea><br><br>
+  
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="pie">
+        <details>
+          <summary>¿Sabías que...?</summary>
+          <p>Tengo una gran capacidad para hacer el ridículo.</p>
+        </details>
+      
+        <div class="redes">
+          <p>Encuéntrame en:</p>
+          <a href="https://github.com/Anarragan" target="_blank">GitHub</a>
+        </div>
+      
+        <small>&copy; 2025 Ana María Barragán Ariza</small>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Press Start 2P', monospace;
+    background-color: black;
+    color: white;
+    line-height: 1.5;
+    background-image: url('/imagenes/video_fondo.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+
+  body, a, button, input, textarea, select, label {
+    cursor: url('/imagenes/corazon.png') 16 16, auto;
+  }
+
+  header{
+    text-align: center;
+    padding: 150px;
+  }
+
+#quote{
+    margin: 80px auto 0 auto; 
+    text-align: center;
+    font-size: 12px;
+    max-width: 600px;
+    color: #ccc;
+    font-style: italic;
+}
+
+  header img{
+    border-radius: 100%;
+    padding: 20px;
+  }
+  .cabeza h1 {
+    margin: 10px 0;
+    font-size: 25px;
+  }
+
+  .cabeza p, .cabeza time{
+    font-size: 10px;
+  }
+
+  .navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    border-bottom: 2px solid white;
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navegacion ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    flex-grow: 1;
+  }
+  
+  .navegacion a {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    border: 2px solid white;
+    transition: 0.3s;
+  }
+  
+  .navegacion a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .gif-nav {
+    width: 240px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gif-nav img {
+    max-height: 75px;
+    width: auto;
+  }
+
+  section {
+    min-height: 70vh; 
+    padding: 40px 20px;
+    scroll-margin-top: 150px;
+    margin-bottom: 40px;
+  }
+
+
+  section > div {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  figure img{
+    padding-top: 30px;
+  }
+
+  .caja-dialogo {
+    padding: 40px;
+    margin: 80px auto;
+    max-width: 800px;
+    font-size: 12px;
+    text-align: left;
+    border: 2px solid white;
+    background-color: black;
+  }
+
+  @keyframes escribir {
+    from {
+      max-height: 0;
+    }
+    to {
+      max-height: 1000px;
+    }
+  }
+  
+  .texto-dialogo {
+    display: block;
+    overflow: hidden;
+    white-space: normal;
+    animation: escribir 2s steps(60, end);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
+  th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #111;
+    color: yellow;
+  }
+
+  button {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.2s ease;
+  }
+
+  button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  footer.pie {
+    background-color: #000;
+    border-top: 2px solid white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 100px;
+  }
+  
+  footer details {
+    margin: 0 auto 20px auto;
+    max-width: 600px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #111;
+    border: 1px solid white;
+    padding: 10px;
+  }
+  
+  footer details summary {
+    cursor: pointer;
+    color: yellow;
+  }
+  
+  footer details p {
+    margin-top: 10px;
+  }
+  
+  footer .redes {
+    margin: 10px 0;
+  }
+  
+  footer .redes a {
+    color: cyan;
+    text-decoration: none;
+    font-size: 11px;
+    border: 1px solid cyan;
+    padding: 6px 10px;
+    display: inline-block;
+    margin-top: 5px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  footer .redes a:hover {
+    background-color: cyan;
+    color: black;
+  }
+  
+  footer small {
+    display: block;
+    margin-top: 20px;
+    font-size: 9px;
+    color: #999;
+  }
